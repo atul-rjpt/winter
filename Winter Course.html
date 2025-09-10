@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo-title">
+            <img src="C:/Users/91885/Desktop/img//nit.png" alt="Logo" class="logo">
+            <h1 class="site-title">
+                Winter School on SCML
+            </h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#speaker">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#">Accomodation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 class="city-nights-text">
+            Winter School on Scientific Computing and Machine Learning: Principles and Applications
+        </h2>
+        <p style="color:white; margin-top:10px;">
+            Technically and Financially Sponsored by SCRS
+        </p>
+    </section>
+
+    <section id="about" class="section-box">
+        <h2>About</h2>
+        <p>
+            The "Evolutionary Algorithms and Machine Learning: Theory and Applications" winter school offers a comprehensive and intensive exploration of the intersection between
+            Evolutionary Algorithms (EAs) and Machine Learning (ML). This program is designed to provide participants with both theoretical foundations and practical insights into
+            how evolutionary strategies can enhance machine learning models and vice versa. Participants will delve into the principles of evolutionary algorithms, including genetic
+            algorithms, genetic programming, and other optimization techniques that draw inspiration from natural evolution. The program covers how these algorithms can be used to solve
+            complex optimization problems, optimize neural networks, or even evolve new machine learning models. Furthermore, the winter school incorporates hands-on sessions where attendees
+            will apply these concepts in real-world scenarios, such as optimizing hyperparameters in ML models, designing adaptive learning systems, or tackling large-scale computational
+            problems. Leading experts in the field will share their research and experiences, offering valuable perspectives on both the challenges and breakthroughs in this rapidly evolving
+            domain. The winter school aims to foster a collaborative learning environment, where participants can engage in discussions, work on projects, and gain insights
+            domain. The winter school aims to foster a collaborative learning environment, where participants can engage in discussions, work on projects, and gain insights
+            into the latest trends and future directions of research at the intersection of evolutionary algorithms and machine learning.
+        </p>
+        <br>
+        <p>
+            Registration Deadline: 21st Dec 2025
+        </p>
+        <br>
+        <p>
+            Event Dates:  22nd Dec 2025 – 26th Dec 2025
+        </p>
+        <br>
+        <p>
+            Where? Department of Mathematics and Computing, Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India.
+        </p>
+    </section>
+
+    <div class="bg-animation"></div>
+    <script>
+        const container = document.querySelector('.bg-animation');
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Create 80 particles
+        for (let i = 0; i < 80; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+
+            // random size
+            const size = random(3, 8);
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+
+            // random start position
+            particle.style.left = random(0, 100) + 'vw';
+            particle.style.top = random(0, 100) + 'vh';
+
+            // move randomly
+            function moveParticle() {
+                particle.animate([
+                    { transform: `translate(0,0)` },
+                    { transform: `translate(${random(-200, 200)}px, ${random(-200, 200)}px)` }
+                ], {
+                    duration: random(4000, 8000),
+                    iterations: 1,
+                    easing: "ease-in-out",
+                    fill: "forwards"
+                }).onfinish = moveParticle; // restart animation with new path
+            }
+
+            moveParticle();
+            container.appendChild(particle);
+        }
+    </script>
+
+
+    <!-- Key Speakers -->
+    <section id="speaker" class="session-box">
+        <!-- Heading -->
+        <h2 class="session-title">
+            Special Session: <br>
+            Mastering Prompt Engineering for Effective Large Language Model Applications
+        </h2>
+
+        <!-- Content row -->
+        <div class="session-content">
+            <!-- Left column: Topics -->
+            <div class="topics">
+                <h3>Topics Covered</h3>
+                <ul>
+                    <li>Introduction to Large Language Models</li>
+                    <li>Principles of Prompt Engineering</li>
+                    <li>Advanced Prompt Techniques</li>
+                    <li>Hands-On Labs</li>
+                    <li>Special Session</li>
+                </ul>
+            </div>
+
+            <!-- Right column: Speaker -->
+            <div class="expert-card">
+                <p class="label">Industry Expert</p>
+                <div class="expert-inner">
+                    <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Speaker">
+                    <div class="expert-info">
+                        <h4>Mr. Ravi Srivastava</h4>
+                        <p>
+                            Full Stack Developer <br>
+                            (Agentic AI, US, Generative AI, C#, Angular, Web Services)
+                        </p>
+                        <span>Rohde & Schwarz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <button class="cta-btn">Fix Your Spot</button>
+    </section>
+
+    <!-- Speakers -->
+    <section class="speakers-section">
+        <h2 class="speakers-heading">Speakers</h2>
+
+        <div class="speakers-grid">
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr Animashree Anandkumar</h3>
+                <p>AI for Science</p>
+                <p>Caltech University, USA</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Siddhartha Mishra</h3>
+                <p>Intro Scientific computing & Numerical Methods</p>
+                <p>ETH Zurich</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Pawan Goyal</h3>
+                <p> Machine learning for dynamical systems</p>
+                <p>
+                    Max Planck Institute of complex technical
+                    systems, Magdeburg
+                </p>
+                <p>ETH Zurich</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Youngjoon Hong</h3>
+                <p>Physics Informed Neural Networks for Differential equations</p>
+                <p>Seoul National University, S. Korea </p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr Donghwi Jung</h3>
+                <p>Deep learning for scientific applications</p>
+                <p>Korea University</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Ritam Majumdar</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="speaker-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Prof Lipo Wang">
+                <h3>Dr. Lipo Wang</h3>
+                <p>Time series modeling in Scientific domains</p>
+                <p>NTU Singapore</p>
+                <a href="https://www.ntu.edu.sg" target="_blank">Visit Website</a>
+            </div>
+            <!-- Add more speakers as needed -->
+        </div>
+    </section>
+
+
+
+    <!-- Organizers -->
+    <section class="organizers-section">
+        <h2 class="organizers-heading">Organizers</h2>
+
+        <!-- Top Organizer Box -->
+        <div class="main-organizer">
+            <img src="C:/Users/91885/Desktop/img/nit.png" alt="Organizer Logo">
+            <p>Organized by </p>
+            <p><strong>Dr B R Ambedkar National Institute of Technology Jalandhar</strong></p>
+        </div>
+
+        <!-- Organizer Team -->
+        <div class="organizers-grid">
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 1">
+                <h3>Aditi Sharma</h3>
+                <p>PhD Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 2">
+                <h3>Rashmi</h3>
+                <p>PhD Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 3">
+                <h3>Bablu Kumar Sah</h3>
+                <p>PhD Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 4">
+                <h3>Mr. D Patel</h3>
+                <p>PhD Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 1">
+                <h3>Dr. A Kumar</h3>
+                <p>PhD Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 2">
+                <h3>Atul kumar</h3>
+                <p>Mtech Student</p>
+            </div>
+
+            <div class="organizer-card">
+                <img src="C:/Users/91885/Desktop/img/Aninda+Bose.png" alt="Organizer 3">
+                <h3>Dhruv Bindra</h3>
+                <p>Mtech Student</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Schedule -->
+    <section id="schedule" class="schedule-section">
+        <h2 class="schedule-heading">Schedule</h2>
+
+        <div class="schedule-box">
+            <iframe src="C:/Users/91885/Desktop/img/schedule.pdf" class="schedule-pdf"></iframe>
+        </div>
+    </section>
+
+
+
+
+    <!-- Registration Link -->
+    <section id ="registration" class="registration-section">
+        <div class="registration-container">
+            <!-- Registration Link Box -->
+            <div class="reg-box">
+                <h3>★ REGISTRATION LINK</h3>
+                <p>Register and pay the fee through the official portal:</p>
+                <img src="C:/Users/91885/Desktop/img/qr.png" alt="QR Code" class="qr-code">
+                <br>
+                <a href="#" class="btn">Go to Registration</a>
+                <p class="note"><b>Note:</b> 20% Discount on Registration Fee for <b>SCRS Members</b>.</p>
+            </div>
+
+            <!-- Registration Fee Box -->
+            <div class="reg-box reg-black">
+                <h3>REGISTRATION FEE</h3>
+                <p>The non-refundable registration fee structure is as follows:</p>
+                <table class="fee-table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Online</th>
+                        <th>Offline</th>
+                    </tr>
+                    <tr>
+                        <td>Students</td>
+                        <td>Rs. 1500/-</td>
+                        <td>Rs. 2500/-</td>
+                    </tr>
+                    <tr>
+                        <td>Faculty</td>
+                        <td>Rs. 2500/-</td>
+                        <td>Rs. 3500/-</td>
+                    </tr>
+                    <tr>
+                        <td>Industry Person</td>
+                        <td>Rs. 4000/-</td>
+                        <td>Rs. 5000/-</td>
+                    </tr>
+                    <tr>
+                        <td>International</td>
+                        <td>USD 100/-</td>
+                        <td>USD 150/-</td>
+                    </tr>
+                </table>
+                <p class="note">
+                    <b>Note:</b> 20% Discount on Registration Fee for <b>SCRS Members</b>.<br>
+                    <b>Note:</b> 18% GST Exempted on Registration Fee for the <b>Student/Faculty/Staff of NITJ</b>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+        <h2>Sponsors</h2>
+        <p>We are grateful for the support of our sponsors, whose contributions make this event possible.</p>
+        <div class="sponsor-card">
+            <img src="C:/Users/91885/Desktop/img/sponsor.png" alt="SCRS Logo">
+            <a href="https://example.com" target="_blank" class="sponsor-link">Visit Sponsor</a>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <!-- Particle background restricted to footer -->
+        <div id="footer-particles"></div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="footer-column">
+                <img src="C:/Users/91885/Desktop/img/nit.png" alt="Logo" class="nit-logo" />
+                <p>
+                    Dr B R Ambedkar National Institute of Technology
+
+                    Jalandhar, Punjab, India
+                </p>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Dr. Neha Yadav </p>
+                <p>Assistant Professor</p>
+                <p>Department of Mathematics and Computing</p>
+                <p>Dr. B.R. Ambedkar National Institute</p>
+                <p>of Technology Jalandhar, Punjab, India</p>
+                <p><a href="mailto:yadavn@nitj.ac.in ">Email: yadavn@nitj.ac.in </a></p>
+                <p>Mobile: 7310751691</p>
+            </div>
+
+            <!-- Query -->
+            <div class="footer-column">
+                <h4>Query</h4>
+                <a href="#">Events</a>
+                <a href="brochure.pdf" target="_blank">Brochure PDFs</a>
+                <a href="https://example.com" target="_blank">Official Website</a>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="twitter.com">twitter</a>
+                    <a href="facebook.com">facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 NIT Jalandhar. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- tsParticles Script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script>
+        tsParticles.load("footer-particles", {
+            background: { color: "transparent" },
+            fullScreen: { enable: false }, // ❌ disables fullscreen
+            particles: {
+                number: { value: 60 },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.7 },
+                size: { value: 3 },
+                links: {
+                    enable: true,
+                    color: "#ffffff",
+                    distance: 120,
+                    opacity: 0.5,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.2,
+                    random: true,
+                    outModes: { default: "out" }
+                }
+            },
+            interactivity: {
+                events: { onHover: { enable: true, mode: "grab" }, resize: true },
+                modes: { grab: { distance: 150, links: { opacity: 0.8 } } }
+            },
+            detectRetina: true
+        });
+    </script>
+
+
+</body>
+</html>
