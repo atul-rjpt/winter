@@ -114,14 +114,46 @@ html {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* full screen height */
-    background: url("C:/Users/91885/Desktop/img/evoml.png") no-repeat center center;
-    background-size: cover; /* ensures perfect alignment */
+    width: 100%;
+    min-height: 100vh; /* full viewport height */
+    background: url("../img/evoml.png") no-repeat center center;
+    background-size: cover; /* covers entire hero section */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    padding: 0 20px; /* small padding for mobile */
+}
+
+.hero h2 {
+    font-size: 2rem;  /* adjusts with screen */
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 768px) {
+    .hero h2 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero h2 {
+        font-size: 4rem;
+    }
+    .hero p {
+        font-size: 1.8rem;
+    }
 }
 
 .city-nights-text {
@@ -807,6 +839,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
 
 
