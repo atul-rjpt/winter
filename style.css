@@ -453,14 +453,14 @@ html {
 }
 
     .main-organizer img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;   /* circular frame */
-    object-fit: contain;  /* fit entire image without cropping */
+    width: 120px;         /* keeps width consistent */
+    height: auto;         /* preserves original aspect ratio */
+    object-fit: contain;  /* ensures the full logo fits */
     display: block;
-    margin: 0 auto 10px auto;  /* center horizontally */
-    background: none;    /* ensures transparency shows */
+    margin: 0 auto 10px auto;  /* centers the image */
+    background: none;     /* preserves PNG transparency */
 }
+
 
     .main-organizer p {
         font-size: 16px;
@@ -807,5 +807,6 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
 
