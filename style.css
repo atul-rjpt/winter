@@ -172,12 +172,13 @@ html {
 }
 
     .section-box h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-        font-weight: bold;
-        color: #ffffff; 
-        text-shadow: none; 
-    }
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-align: center;  /* add this line */
+}
+
 
     .section-box p {
         font-size: 18px;
