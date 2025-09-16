@@ -453,12 +453,14 @@ html {
 }
 
     .main-organizer img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 10px;
-    }
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;   /* circular frame */
+    object-fit: contain;  /* fit entire image without cropping */
+    display: block;
+    margin: 0 auto 10px auto;  /* center horizontally */
+    background: none;    /* ensures transparency shows */
+}
 
     .main-organizer p {
         font-size: 16px;
@@ -805,4 +807,5 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
