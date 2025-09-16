@@ -16,18 +16,27 @@
                 Winter School on SCML
             </h1>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#speaker">Speakers</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#registration">Registration</a></li>
-                <li><a href="#">Accomodation</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-
-            </ul>
+       <nav class="navbar">
+              <div class="logo-title">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <span class="site-title">Winter School</span>
+              </div>
+            
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            
+              <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#registration">Register</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+              </ul>
         </nav>
+
     </header>
 
     <!-- Hero Section -->
@@ -451,6 +460,16 @@
             detectRetina: true
         });
     </script>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          mobileMenu.classList.toggle('active');
+        });
+    </script>
+
 
 
 </body>
