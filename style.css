@@ -138,7 +138,7 @@ html {
   position: relative;
   width: 100%;
   min-height: 100vh; /* Always full viewport height */
-  background: url("img/your-image.jpg") no-repeat center center;
+  background: url("img/evoml.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -853,6 +853,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
 
 
