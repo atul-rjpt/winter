@@ -776,6 +776,11 @@ html {
   overflow: hidden;
 }
 
+/* Remove particle canvas completely */
+.footer #particles-js {
+  display: none !important;
+}
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -797,67 +802,27 @@ html {
   margin-bottom: 10px;
 }
 
-.footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ff00de; /* Neon accent to match hero */
-}
-
-.footer-column a {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
-
-.footer-column a:hover {
-  color: #00c3ff;
-}
-
-.footer p {
-  font-size: 0.95rem;
-  margin: 0;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.85rem;
-  color: #aaa;
-}
-
-/* ================= Responsive Styles ================= */
+/* ====== Responsive Styling ====== */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 25px;
+  }
+
+  /* Center the NIT logo on mobile */
+  .footer-column img.nit-logo {
+    margin: 0 auto 10px auto; /* centers horizontally */
+    display: block;
   }
 
   .footer-column {
     flex: 1 1 100%;
+    align-items: center;
   }
 
   .social-icons {
     justify-content: center;
-  }
-
-  .footer-column h4 {
-    font-size: 1.1rem;
-  }
-
-  .footer p, 
-  .footer a {
-    font-size: 0.9rem;
   }
 }
