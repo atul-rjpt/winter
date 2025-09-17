@@ -562,17 +562,15 @@ html {
     margin-bottom: 15px;
 }
 
-/* Box that holds PDF */
-.schedule-box {
-  width: 80%;
-  height: 600px;
-  margin: auto;
-  border-radius: 16px;
-  overflow: hidden;
-  padding: 10px;
-  position: relative;
-}
-
+/* Box that holds PDF */ 
+.schedule-box { width: 80%; 
+               height: 600px; 
+               margin: auto; 
+               border-radius: 16px; 
+               overflow: hidden; 
+               padding: 10px; 
+               position: relative; 
+              } 
 /* Embedded PDF */
 .schedule-pdf {
   width: 100%;
@@ -815,3 +813,4 @@ html {
     margin: 0 auto 10px;
   }
 }
+
