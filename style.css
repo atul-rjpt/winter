@@ -767,89 +767,97 @@ html {
 
 
 
-/* Footer */
+/* ================= Footer ================= */
 .footer {
   position: relative;
-  background: #0b0f1a;
+  background: #111;
   color: #fff;
-  padding: 20px 20px;
-  overflow: hidden;   /* keeps dots inside footer */
-}
-
-#footer-particles {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
+  padding: 40px 20px;
+  overflow: hidden;
 }
 
 .footer-content {
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-}
-
-.nit-logo {
-    width: 50px;
-    height: auto;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-column {
-  flex: 1;
-  min-width: 12px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column img.nit-logo {
+  max-width: 80px;
+  margin-bottom: 10px;
 }
 
 .footer-column h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #1e90ff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ff00de; /* Neon accent to match hero */
 }
 
 .footer-column a {
-  display: block;
-  color: #fff;
-  margin-bottom: 10px;
+  color: #ddd;
   text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-  color: #1e90ff;
+  color: #00c3ff;
 }
 
-.social-icons a {
-  margin-right: 12px;
-  font-size: 20px;
-  color: #fff;
+.footer p {
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+  color: #ccc;
 }
 
-.social-icons a:hover {
-  color: #1e90ff;
+.social-icons {
+  display: flex;
+  gap: 15px;
 }
 
 .footer-bottom {
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  border-top: 1px solid #333;
-  position: relative;
-  z-index: 1;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+  color: #aaa;
 }
 
+/* ================= Responsive Styles ================= */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
 
+  .footer-column {
+    flex: 1 1 100%;
+  }
 
+  .social-icons {
+    justify-content: center;
+  }
 
+  .footer-column h4 {
+    font-size: 1.1rem;
+  }
 
-
-
-
-
-
-
-
+  .footer p, 
+  .footer a {
+    font-size: 0.9rem;
+  }
+}
