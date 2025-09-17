@@ -133,78 +133,45 @@ html {
   }
 }
 
-/* Hero Section */
+/* ================= Hero Section ================= */
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 100vh; /* Always full viewport height */
-  background: url("img/evoml.png") no-repeat center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 80px 20px; /* Space to avoid navbar overlap */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("img/evoml.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4); /* dark overlay for readability */
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
 }
 
-.hero h2,
-.hero p {
-  position: relative;
-  z-index: 1; /* stays above overlay */
-}
-
-/* Responsive typography */
-.hero h2 {
-  font-size: clamp(1.8rem, 5vw, 4rem);
-  line-height: 1.3;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: clamp(1rem, 3.5vw, 1.8rem);
-  margin-top: 10px;
-  line-height: 1.5;
-}
+.hero h2, .hero p { position: relative; z-index: 1; }
 
 .city-nights-text {
-  font-size: clamp(1.5rem, 5vw, 2.5rem); /* responsive text size */
-  font-weight: 400;
-  color: #ffffff;
-  text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff;
-  animation: glowPulse 3s ease-in-out infinite alternate;
-  white-space: nowrap;
-  padding: 0;
-  background: none;
+    font-size: 2rem;
+    text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff;
+    animation: glowPulse 3s ease-in-out infinite alternate;
 }
 
 @keyframes glowPulse {
-  from {
-    text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff;
-  }
-  to {
-    text-shadow: 0 0 6px #fff, 0 0 10px #ff00de, 0 0 20px #00c3ff;
-  }
+    from { text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff; }
+    to { text-shadow: 0 0 6px #fff, 0 0 10px #ff00de, 0 0 20px #00c3ff; }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    background-position: top center;
-    padding: 100px 15px 40px; /* More breathing space for text */
-    min-height: 100vh; /* Keep full height so text doesn't get cut */
-  }
-}
-
+.hero p { font-size: 1.2rem; margin-top: 10px; }
 /* ================= Section Boxes ================= */
 .section-box {
     max-width: 1400px;
@@ -853,6 +820,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
 
 
