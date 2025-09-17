@@ -134,44 +134,65 @@ html {
 }
 
 /* ================= Hero Section ================= */
+/* ================= Responsive Media Queries ================= */
+@media screen and (max-width: 992px) {
+  .hero h2 { font-size: 1.8rem; }
+  .hero p { font-size: 1rem; }
+} /* <-- ✅ Added closing brace */
+
+/* ================= Hero Section ================= */
 .hero {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: url("img/evoml.png") no-repeat center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("img/evoml.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
 }
 
-.hero h2, .hero p { position: relative; z-index: 1; }
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive, scalable text */
+.hero h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.3;
+}
+
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-top: 10px;
+}
 
 .city-nights-text {
-    font-size: 2rem;
-    text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff;
-    animation: glowPulse 3s ease-in-out infinite alternate;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff;
+  animation: glowPulse 3s ease-in-out infinite alternate;
 }
 
 @keyframes glowPulse {
-    from { text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff; }
-    to { text-shadow: 0 0 6px #fff, 0 0 10px #ff00de, 0 0 20px #00c3ff; }
+  from { text-shadow: 0 0 4px #fff, 0 0 8px #ff00de, 0 0 15px #00c3ff; }
+  to { text-shadow: 0 0 6px #fff, 0 0 10px #ff00de, 0 0 20px #00c3ff; }
 }
 
-.hero p { font-size: 1.2rem; margin-top: 10px; }
 /* ================= Section Boxes ================= */
 .section-box {
     max-width: 1400px;
@@ -820,6 +841,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 
 
 
